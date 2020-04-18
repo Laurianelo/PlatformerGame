@@ -5,7 +5,7 @@ public class EnemyPatrol : MonoBehaviour
     public float speed;
     public Transform[] wayPoints;
     public SpriteRenderer graphics;
-
+    private int damagesOnCollision = 10;
 
     private Transform targetPoint;
     private int destPoint;
@@ -15,7 +15,6 @@ public class EnemyPatrol : MonoBehaviour
         targetPoint = wayPoints[0];
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 dir = targetPoint.position - transform.position;
@@ -26,6 +25,18 @@ public class EnemyPatrol : MonoBehaviour
             destPoint = (destPoint + 1) % wayPoints.Length;
             targetPoint = wayPoints[destPoint];
             graphics.flipX = !graphics.flipX;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.CompareTag("Player"))
+        {
+            Debug.Log(damagesOnCollision);
+            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(damagesOnCollision);
+            Debug.Log(damagesOnCollision);
+            Debug.Log("dans damage ebemy");
         }
     }
 }
