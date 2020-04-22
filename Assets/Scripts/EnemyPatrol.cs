@@ -32,11 +32,10 @@ public class EnemyPatrol : MonoBehaviour
     {
         if(collision.transform.CompareTag("Player"))
         {
-            Debug.Log(damagesOnCollision);
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(damagesOnCollision);
             Debug.Log(damagesOnCollision);
-            Debug.Log("dans damage ebemy");
+
         }
     }
 }

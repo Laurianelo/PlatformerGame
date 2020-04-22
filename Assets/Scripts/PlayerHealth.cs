@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log("dans take damage + " + damage);
+
         if(!isInvincible)
         {
             currentHealth -= damage;
