@@ -155,8 +155,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.037742376, y: -0.29085994}
-  m_Size: {x: 0.8224416, y: 1.4182801}
+  m_Offset: {x: 0.037742376, y: -0.30957603}
+  m_Size: {x: 0.8224416, y: 1.3808479}
   m_Direction: 0
 --- !u!50 &70177608
 Rigidbody2D:
@@ -192,15 +192,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 320
-  rb: {fileID: 70177608}
   jumpForce: 300
-  groundCheck: {fileID: 789335715}
   groundCheckRadius: 0.3
+  rb: {fileID: 70177608}
+  groundCheck: {fileID: 789335715}
+  animator: {fileID: 70177613}
+  spriteRenderer: {fileID: 70177610}
   collisionLayer:
     serializedVersion: 2
     m_Bits: 1
-  animator: {fileID: 70177613}
-  spriteRenderer: {fileID: 70177610}
 --- !u!212 &70177610
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789335714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.037, y: -0.839, z: 0}
+  m_LocalPosition: {x: 0.033, y: -0.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 70177611}

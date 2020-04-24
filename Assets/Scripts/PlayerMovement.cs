@@ -5,34 +5,43 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
-    public Rigidbody2D rb;
     public float jumpForce;
-    public Transform groundCheckLeft;
-    public Transform groundCheckRight;
+    public float groundCheckRadius;
+
+    public Rigidbody2D rb;
+    public Transform groundCheck;
     public Animator animator;
     public SpriteRenderer spriteRenderer;
+    public LayerMask collisionLayer;
 
-    private Vector3 velocity = Vector3.zero;
     private bool isJumping;
     private bool isGrounded;
+    private float horizontalMovement;
+    private Vector3 velocity = Vector3.zero;
 
-    void FixedUpdate()
+
+    private void Update()
     {
-        isGrounded = Physics2D.OverlapArea(groundCheckLeft.position, groundCheckRight.position);
-     
-        float horizontalMovement = Input.GetAxis("Horizontal") *  moveSpeed * Time.deltaTime;
-
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             isJumping = true;
         }
-
-        MovePlayer(horizontalMovement);
 
         Flip(rb.velocity.x);
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Speed", characterVelocity);
+    }
+
+    // not the best solution, bug with unity if in update, i don't have another solutions for the moment
+    void FixedUpdate()
+    {
+        
+        horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;//
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
+
+        MovePlayer(horizontalMovement);
     }
 
     private void MovePlayer(float _horizontalMovement)
@@ -57,5 +66,11 @@ public class PlayerMovement : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }

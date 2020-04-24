@@ -3,12 +3,13 @@
 public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
+    private int damagesOnCollision = 10;
     public Transform[] wayPoints;
     public SpriteRenderer graphics;
-    private int damagesOnCollision = 10;
 
-    private Transform targetPoint;
     private int destPoint;
+    private Transform targetPoint;
+
 
     void Start()
     {
@@ -34,7 +35,6 @@ public class EnemyPatrol : MonoBehaviour
         {
             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(damagesOnCollision);
-            Debug.Log(damagesOnCollision);
 
         }
     }
