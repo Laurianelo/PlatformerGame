@@ -16,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isJumping;
     private bool isGrounded;
+    public bool isClimbing;
+
     private float horizontalMovement;
+    private float verticalMovement;
     private Vector3 velocity = Vector3.zero;
 
 
@@ -36,33 +39,45 @@ public class PlayerMovement : MonoBehaviour
     // not the best solution, bug with unity if in update, i don't have another solutions for the moment
     void FixedUpdate()
     {
-        
+
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;//
+        verticalMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;//
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
 
-        MovePlayer(horizontalMovement);
+        MovePlayer(horizontalMovement, verticalMovement);
     }
 
-    private void MovePlayer(float _horizontalMovement)
+    private void MovePlayer(float _horizontalMovement, float _verticalMovement)
     {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
-
-        if(isJumping == true)
+        if (!isClimbing)
         {
-            rb.AddForce(new Vector2(0f, jumpForce));
-            isJumping = false;
+            // horizontal movement
+            Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+
+            if (isJumping == true)
+            {
+                rb.AddForce(new Vector2(0f, jumpForce));
+                isJumping = false;
+            }
+        }else
+        {
+            //vertical movement
+            Vector3 targetVelocity = new Vector2(rb.velocity.x, _verticalMovement);
+            rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+
         }
+
     }
 
     private void Flip(float _velocity)
     {
-        if(_velocity > 0.1f)
+        if (_velocity > 0.1f)
         {
             spriteRenderer.flipX = false;
         }
-        else if( _velocity < -0.1f)
+        else if (_velocity < -0.1f)
         {
             spriteRenderer.flipX = true;
         }
