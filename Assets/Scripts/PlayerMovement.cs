@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed;
+    public float climbSpeed;
     public float jumpForce;
     public float groundCheckRadius;
 
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
         float characterVelocity = Mathf.Abs(rb.velocity.x);
         animator.SetFloat("Speed", characterVelocity);
+        animator.SetBool("IsClimbing", isClimbing);
     }
 
     // not the best solution, bug with unity if in update, i don't have another solutions for the moment
@@ -41,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         horizontalMovement = Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;//
-        verticalMovement = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;//
+        verticalMovement = Input.GetAxis("Vertical") * climbSpeed * Time.deltaTime;//
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, collisionLayer);
 
@@ -64,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         }else
         {
             //vertical movement
-            Vector3 targetVelocity = new Vector2(rb.velocity.x, _verticalMovement);
+            Vector3 targetVelocity = new Vector2(0, _verticalMovement);
             rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
 
         }
