@@ -10,6 +10,17 @@ public class PlayerHealth : MonoBehaviour
     public float invicibilityTime = 2f;
     public SpriteRenderer graphics;
     public HealthBar healthBar;
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Many instances in Playerhealth");
+            return;
+        }
+        instance = this;
+    }
 
     void Start()
     {
@@ -27,7 +38,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-
         if(!isInvincible)
         {
             currentHealth -= damage;
@@ -36,7 +46,20 @@ public class PlayerHealth : MonoBehaviour
             StartCoroutine(InInvincibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
         }
-       
+    }
+
+    public void HealPlayer(int amount)
+    {
+        if ((currentHealth + amount) > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth += amount;
+
+        }
+        healthBar.SetHealth(currentHealth);
     }
 
 
