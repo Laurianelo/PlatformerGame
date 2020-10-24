@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -43,9 +44,23 @@ public class PlayerHealth : MonoBehaviour
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
             isInvincible = true;
+            if(currentHealth <=0)
+            {
+                Die();
+                return;
+
+            }
             StartCoroutine(InInvincibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
         }
+    }
+
+    public void Die()
+    {
+        PlayerMovement.instance.enabled = false;
+        PlayerMovement.instance.animator.SetTrigger("Die");
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
+        PlayerMovement.instance.TheCollider.enabled = false;
     }
 
     public void HealPlayer(int amount)
@@ -57,7 +72,6 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             currentHealth += amount;
-
         }
         healthBar.SetHealth(currentHealth);
     }

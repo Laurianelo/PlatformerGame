@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public SpriteRenderer spriteRenderer;
     public LayerMask collisionLayer;
+    public CapsuleCollider2D TheCollider;
+   
 
     private bool isJumping;
     private bool isGrounded;
@@ -22,6 +24,17 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMovement;
     private float verticalMovement;
     private Vector3 velocity = Vector3.zero;
+    public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Many instances in PlayerMovement");
+            return;
+        }
+        instance = this;
+    }
 
 
     private void Update()
