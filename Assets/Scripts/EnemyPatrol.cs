@@ -3,7 +3,7 @@
 public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
-    private int damagesOnCollision = 10;
+    public int damagesOnCollision = 10;
     public Transform[] wayPoints;
     public SpriteRenderer graphics;
 

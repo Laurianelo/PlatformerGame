@@ -48,7 +48,6 @@ public class PlayerHealth : MonoBehaviour
             {
                 Die();
                 return;
-
             }
             StartCoroutine(InInvincibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
@@ -61,7 +60,19 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.animator.SetTrigger("Die");
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.TheCollider.enabled = false;
+        GameOverManager.instance.OnPlayerDeath();
     }
+
+    public void Respawn()
+    {
+        PlayerMovement.instance.enabled = true;
+        PlayerMovement.instance.animator.SetTrigger("Respawn");
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
+        PlayerMovement.instance.TheCollider.enabled = true;
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
+        isInvincible = false; // a revoir
+}
 
     public void HealPlayer(int amount)
     {
