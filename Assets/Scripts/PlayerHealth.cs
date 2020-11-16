@@ -60,6 +60,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.animator.SetTrigger("Die");
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic;
         PlayerMovement.instance.TheCollider.enabled = false;
+        PlayerMovement.instance.rb.velocity = Vector3.zero;
         GameOverManager.instance.OnPlayerDeath();
     }
 
