@@ -81,6 +81,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -130,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 320
+  climbSpeed: 170
   jumpForce: 300
   groundCheckRadius: 0.3
   rb: {fileID: 5800116800508016018}
@@ -139,6 +141,8 @@ MonoBehaviour:
   collisionLayer:
     serializedVersion: 2
     m_Bits: 1
+  TheCollider: {fileID: 5800116800508016029}
+  isClimbing: 0
 --- !u!50 &5800116800508016018
 Rigidbody2D:
   serializedVersion: 4
@@ -198,6 +202,7 @@ MonoBehaviour:
   invicibilityTime: 2
   graphics: {fileID: 5800116800508016016}
   healthBar: {fileID: 0}
+  damageSound: {fileID: 8300000, guid: ec9511c750988174e99722d070a4e19d, type: 3}
 --- !u!70 &5800116800508016029
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

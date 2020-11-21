@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToDestroy: {fileID: 5322246801721343867}
+  KillEnemySound: {fileID: 8300000, guid: 59bd6717ceb958b47b777893dbd53ac6, type: 3}
 --- !u!1 &5322246802040287844
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  damagesOnCollision: 10
   wayPoints:
   - {fileID: 5322246802040287845}
   - {fileID: 5322246801707105681}

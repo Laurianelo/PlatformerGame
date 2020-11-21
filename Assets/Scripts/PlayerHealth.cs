@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public SpriteRenderer graphics;
     public HealthBar healthBar;
     public static PlayerHealth instance;
+    public AudioClip damageSound;
 
     private void Awake()
     {
@@ -41,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(!isInvincible)
         {
+            AudioManager.instance.PlayClipAt(damageSound, transform.position);
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
             isInvincible = true;
