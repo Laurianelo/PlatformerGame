@@ -7,6 +7,7 @@ public class CurrentSceneManager : MonoBehaviour
     public int coinsPickUpCount;
     public Vector3 respawnPoint;
     public static CurrentSceneManager instance;
+    public int levelToUnlock;
 
     private void Awake()
     {

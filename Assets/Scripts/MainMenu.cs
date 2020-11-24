@@ -12,6 +12,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(levelToLoad);
     }
 
+    public void SelectLevelBtn()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+
     public void SettingsBtn()
     {
         SettingsWindow.SetActive(true);

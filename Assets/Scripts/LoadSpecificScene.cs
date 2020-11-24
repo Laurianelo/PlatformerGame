@@ -23,7 +23,6 @@ public class LoadSpecificScene : MonoBehaviour
         }
     }
 
-
     public IEnumerator LoadNextScene()
     {
         LoadAndSaveData.instance.SavaData();
