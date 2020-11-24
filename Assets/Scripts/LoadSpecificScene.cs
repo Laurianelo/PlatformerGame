@@ -19,13 +19,14 @@ public class LoadSpecificScene : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
-            StartCoroutine(loadNextScene());
+            StartCoroutine(LoadNextScene());
         }
     }
 
 
-    public IEnumerator loadNextScene()
+    public IEnumerator LoadNextScene()
     {
+        LoadAndSaveData.instance.SavaData();
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneName);
