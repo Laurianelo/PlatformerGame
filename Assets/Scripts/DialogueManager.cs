@@ -8,11 +8,11 @@ public class DialogueManager : MonoBehaviour
 {
     public Text npcNameUI;
     public Text dialogueContentUI;
-    public static DialogueManager instance;
     public Animator animator;
 
     private Queue<string> sentences;
 
+    public static DialogueManager instance;
     private void Awake()
     {
         if (instance != null)
@@ -66,7 +66,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    private void EndDialogue()
+    public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
     }
