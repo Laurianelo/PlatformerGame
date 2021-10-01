@@ -33702,6 +33702,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f46df21e7393f40967a68e1af735da, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &218739837355575194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33771,6 +33772,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 440c3cea771d7724e96a43bdb75d9396, type: 3}
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 --- !u!1001 &629829383826287209
@@ -33949,6 +33952,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6127ae54348773e42a313c33632e968b, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1887870643898606273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34023,6 +34027,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ed9ed57ae8005d4bb9ce41740891384, type: 3}
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 --- !u!1001 &2294185808614974406

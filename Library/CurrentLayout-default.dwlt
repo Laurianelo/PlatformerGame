@@ -33,6 +33,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ProjectBrowser
@@ -84,6 +85,8 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_EditorHideFlags: 1
@@ -166,11 +169,19 @@ MonoBehaviour:
     width: 1536
     height: 771
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 911, y: 613}
   m_MaxSize: {x: 22006, y: 18063}
   vertical: 1
   controlID: 74
 --- !u!114 &8
+=======
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
+  vertical: 1
+  controlID: 218
+--- !u!114 &6
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
@@ -199,11 +210,19 @@ MonoBehaviour:
     width: 1536
     height: 771
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_MinSize: {x: 911, y: 613}
   m_MaxSize: {x: 22006, y: 18063}
   vertical: 0
   controlID: 75
 --- !u!114 &9
+=======
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 16006, y: 14042}
+  vertical: 0
+  controlID: 219
+--- !u!114 &7
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
@@ -230,7 +249,11 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1260
+=======
+    width: 1011
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     width: 1011
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
@@ -239,8 +262,13 @@ MonoBehaviour:
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 76
 --- !u!114 &10
+=======
+  controlID: 108
+--- !u!114 &8
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
   controlID: 108
 --- !u!114 &8
@@ -265,6 +293,7 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1260
     height: 650
   m_MinSize: {x: 635, y: 492}
@@ -272,6 +301,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 77
 --- !u!114 &11
+=======
+    width: 1011
+    height: 500
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
+  vertical: 0
+  controlID: 109
+--- !u!114 &9
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     width: 1011
     height: 500
@@ -298,8 +336,13 @@ MonoBehaviour:
     x: 0
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 235
     height: 379
+=======
+    width: 267
+    height: 500
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     width: 267
     height: 500
@@ -327,10 +370,17 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 235
     y: 0
     width: 200
     height: 650
+=======
+    x: 267
+    y: 0
+    width: 268
+    height: 500
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     x: 267
     y: 0
@@ -361,15 +411,21 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 435
     y: 0
     width: 825
     height: 650
 =======
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
     x: 535
     y: 0
     width: 476
     height: 500
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -395,6 +451,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 650
     width: 1260
     height: 121
@@ -402,12 +459,17 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 20}
 =======
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
     y: 500
     width: 1011
     height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 23}
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_Panes:
   - {fileID: 18}
@@ -432,6 +494,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1260
     y: 0
     width: 276
@@ -439,6 +502,15 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 24}
+=======
+    x: 1011
+    y: 0
+    width: 525
+    height: 771
+  m_MinSize: {x: 276, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 22}
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     x: 1011
     y: 0
@@ -475,15 +547,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 435.2
     y: 73.6
     width: 823
     height: 629
 =======
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
     x: 535.2
     y: 73.6
     width: 474
     height: 479
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
@@ -531,15 +609,21 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 823
       height: 608
     m_Scale: {x: 0.9895834, y: 0.9895833}
     m_Translation: {x: 411.5, y: 304}
 =======
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
       width: 474
       height: 458
     m_Scale: {x: 0.507136, y: 0.507136}
     m_Translation: {x: 237.45218, y: 229}
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -547,6 +631,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -415.83157
       y: -307.2
@@ -556,6 +641,8 @@ MonoBehaviour:
   m_defaultScale: 0.9895833
   m_LastWindowPixelSize: {x: 1028.75, y: 786.25}
 =======
+=======
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
       x: -468.2219
       y: -451.55542
       width: 934.6605
@@ -563,6 +650,9 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.40033785
   m_LastWindowPixelSize: {x: 592.5, y: 598.75}
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -593,8 +683,13 @@ MonoBehaviour:
     x: 0
     y: 73.6
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 234
     height: 358
+=======
+    width: 266
+    height: 479
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     width: 266
     height: 479
@@ -604,9 +699,15 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 72370000
       m_LastClickedID: 0
       m_ExpandedIDs: e6dbffff
+=======
+      m_SelectedIDs: 16e7ffff
+      m_LastClickedID: -6378
+      m_ExpandedIDs: 8ae9ffff78ecffff2ceeffff56eeffff60fbffff
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
       m_SelectedIDs: 16e7ffff
       m_LastClickedID: -6378
@@ -657,10 +758,17 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 235.2
     y: 73.6
     width: 198
     height: 629
+=======
+    x: 267.2
+    y: 73.6
+    width: 266
+    height: 479
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     x: 267.2
     y: 73.6
@@ -679,9 +787,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 557.1752, y: 283.72964, z: -49.391697}
     speed: 2
     m_Value: {x: 557.1752, y: 283.72964, z: -49.391697}
+=======
+    m_Target: {x: 1052.7999, y: 60.7359, z: 0}
+    speed: 2
+    m_Value: {x: 1052.7999, y: 60.7359, z: 0}
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     m_Target: {x: 1052.7999, y: 60.7359, z: 0}
     speed: 2
@@ -737,9 +851,15 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 558.1721
     speed: 2
     m_Value: 558.1721
+=======
+    m_Target: 42.026096
+    speed: 2
+    m_Value: 42.026096
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     m_Target: 42.026096
     speed: 2
@@ -1009,9 +1129,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 723.2
     width: 1259
     height: 100
+=======
+    y: 460
+    width: 1010
+    height: 309
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     y: 460
     width: 1010
@@ -1218,9 +1344,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1260
     y: 73.6
     width: 275
+=======
+    x: 1011.2
+    y: 73.6
+    width: 524
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     x: 1011.2
     y: 73.6
@@ -1241,7 +1373,11 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &25
+=======
+--- !u!114 &23
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 --- !u!114 &23
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
@@ -1267,8 +1403,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 452
     width: 234
+=======
+    y: 573.60004
+    width: 1010
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     y: 573.60004
     width: 1010
@@ -1294,6 +1435,9 @@ MonoBehaviour:
     m_Folders:
     - Assets/Prefabs
   m_ViewMode: 1
+<<<<<<< HEAD
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
   m_StartGridSize: 64
   m_LastFolders: []
@@ -1304,9 +1448,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 46}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: 7a3b0000
     m_LastClickedID: 15226
     m_ExpandedIDs: 00000000f83e0000e8400000484e00004a4e00004c4e00004e4e0000504e0000524e0000
+=======
+    m_SelectedIDs: 643c0000
+    m_LastClickedID: 15460
+    m_ExpandedIDs: 000000002a3a00005e3c0000603c0000623c0000643c0000663c0000683c00006a3c000000ca9a3b
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     m_SelectedIDs: 643c0000
     m_LastClickedID: 15460
@@ -1337,10 +1487,17 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 319}
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: ffffffff00000000f83e0000e8400000484e00004a4e00004c4e0000504e00007e4e0000
+=======
+    scrollPos: {x: 0, y: 562}
+    m_SelectedIDs: c2660000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000002a3a00005e3c0000603c0000623c0000643c0000663c0000683c00006a3c0000
+>>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
     scrollPos: {x: 0, y: 562}
     m_SelectedIDs: c2660000
