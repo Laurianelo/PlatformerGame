@@ -17,11 +17,14 @@ GameObject:
 <<<<<<< HEAD
   - component: {fileID: 629829383826287211}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 2027877109}
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
+>>>>>>> parent of 337d345 (Save Items)
 =======
 >>>>>>> parent of 337d345 (Save Items)
   m_Layer: 0
@@ -119,6 +122,7 @@ MonoBehaviour:
     type: 3}
   sellParenttn: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &2027877109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,5 +142,7 @@ MonoBehaviour:
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
+>>>>>>> parent of 337d345 (Save Items)
 =======
 >>>>>>> parent of 337d345 (Save Items)
