@@ -1,9 +1,11 @@
-﻿using System;
+﻿
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Chest : MonoBehaviour
 {
+
     public Text pressE;
     private bool IsInRange;
     private int WinCoins;

@@ -44,7 +44,6 @@ public class DialogueTrigger : MonoBehaviour
         {
             isInRange = false; ;
             pressE.enabled = false;
-            DialogueManager.instance.EndDialogue();
         }
     }
 }
