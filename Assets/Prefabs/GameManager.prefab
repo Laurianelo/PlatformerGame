@@ -16,11 +16,14 @@ GameObject:
 <<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 629829383826287211}
+<<<<<<< HEAD
   - component: {fileID: 2027877109}
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
+>>>>>>> parent of 337d345 (Save Items)
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -115,6 +118,7 @@ MonoBehaviour:
   sellBtnPrefab: {fileID: 3281547939688731799, guid: a2cf870fc026e704ca9fb0e40929498d,
     type: 3}
   sellParenttn: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &2027877109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +138,5 @@ MonoBehaviour:
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
 =======
 >>>>>>> parent of af88cd0 (Item scriptable object + shop + pick up items)
+=======
+>>>>>>> parent of 337d345 (Save Items)
