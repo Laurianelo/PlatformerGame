@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
@@ -6,6 +7,11 @@ public class Inventory : MonoBehaviour
     public int coinsCount;
     public Text coinsCountText;
     public static Inventory instance;
+    public List<Item> content = new List<Item>();
+    public Image itemImageUI;
+    public Text itemNameUI;
+    public Sprite emptyItemImage;
+    private int currentIndexContent = 0;
 
     private void Awake()
     {
@@ -33,6 +39,21 @@ public class Inventory : MonoBehaviour
     public void UpdateTextCoins()
     {
         coinsCountText.text = coinsCount.ToString();
+    }
+
+    public void UpdateInventoryUI()
+    {
+        if (content.Count > 0)
+        {
+            itemImageUI.sprite = content[currentIndexContent].img;
+            itemNameUI.text = content[currentIndexContent].name;
+        }
+        else
+        {
+            itemImageUI.sprite = emptyItemImage;
+            itemNameUI.text = "";
+        }
+
     }
 
 

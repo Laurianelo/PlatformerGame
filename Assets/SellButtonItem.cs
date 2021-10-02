@@ -8,7 +8,7 @@ public class SellButtonItem : MonoBehaviour
     public Text itemName;
     public Image itemImg;
     public Text ItemPrice;
-
+    
     public Item item;
 
     public void BuyItem()

@@ -10,7 +10,7 @@ public class ShopTrigger : MonoBehaviour
     public Item[] itemsToSell;
     public string NPCName;
     private Text pressE;
-
+    
     private void Awake()
     {
         pressE = GameObject.FindGameObjectWithTag("PressE_txt").GetComponent<Text>();

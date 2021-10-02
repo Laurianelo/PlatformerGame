@@ -1,0 +1,2 @@
+D:\Projects\PlatformerGame\obj\Debug\Assembly-CSharp.csproj.AssemblyReference.cache
+D:\Projects\PlatformerGame\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
